@@ -37,10 +37,9 @@
             </StackPanel>
         </StatusBar>
         <Grid>
-            <avalonDock:DockingManager x:Name="PanelsDockManager"
-                                       Style="{DynamicResource PanelStyle}">
+            <avalonDock:DockingManager x:Name="PanelsDockManager">
                 <avalonDock:DockingManager.Theme>
-                    <avalonDock:VS2010Theme />
+                    <avalonDock:VS2010Theme></avalonDock:VS2010Theme>
                 </avalonDock:DockingManager.Theme>
                 <avalonDock:LayoutRoot>
                     <avalonDock:LayoutPanel Orientation="Horizontal">
@@ -49,7 +48,10 @@
                             <avalonDock:LayoutAnchorablePane>
                                 <avalonDock:LayoutAnchorable x:Name="ToolsPaleteLayoutAnchorable"
                                     Title="Tools Palete">
-                                    <DockPanel x:Name="ToolsPaleteDockPanel" />
+                                    <Border Style="{StaticResource DockPanelBorderStyle}">
+                                        <DockPanel x:Name="ToolsPaleteDockPanel"
+                                                   Style="{StaticResource DockPanelStyle}"/>
+                                    </Border>
                                 </avalonDock:LayoutAnchorable>
                             </avalonDock:LayoutAnchorablePane>
                         </avalonDock:LayoutAnchorablePaneGroup>
@@ -58,33 +60,47 @@
                                 <avalonDock:LayoutDocumentPane>
                                     <avalonDock:LayoutDocument x:Name="SimulationModuleLayoutDocument" 
                                                            Title="Simulation Model">
-                                        <Canvas x:Name="SimulationModelCanvas" />
+                                        <Border Style="{StaticResource DockPanelBorderStyle}">
+                                            <Canvas x:Name="SimulationModelCanvas"
+                                                    Style="{StaticResource WorkspaceCanvasStyle}"/>
+                                        </Border>
                                     </avalonDock:LayoutDocument>
                                 </avalonDock:LayoutDocumentPane>
-                                
-                        </avalonDock:LayoutDocumentPaneGroup>
+
+                            </avalonDock:LayoutDocumentPaneGroup>
                             <avalonDock:LayoutAnchorablePaneGroup x:Name="DownLayoutAnchorablePaneGroup"
                                                                   DockHeight="150">
                                 <avalonDock:LayoutAnchorablePane>
                                     <avalonDock:LayoutAnchorable x:Name="MessageLogLayoutAnchorable"
                                                                  Title="Message Log">
-                                        <DockPanel x:Name="MessageLogDockPanel" />
+                                        <Border Style="{StaticResource DockPanelBorderStyle}">
+                                            <DockPanel x:Name="MessageLogDockPanel"
+                                                       Style="{StaticResource DockPanelStyle}" />
+                                        </Border>
+
                                     </avalonDock:LayoutAnchorable>
                                 </avalonDock:LayoutAnchorablePane>
                             </avalonDock:LayoutAnchorablePaneGroup>
+
                         </avalonDock:LayoutPanel>
                         <avalonDock:LayoutAnchorablePaneGroup x:Name="RightLayoutAnchorablePaneGroup"
                             DockWidth="150" Orientation="Vertical">
                             <avalonDock:LayoutAnchorablePane>
                                 <avalonDock:LayoutAnchorable x:Name="PropertiesLayoutAnchorable" 
                                                              Title="Properties">
-                                    <DockPanel x:Name="PropertiesDockPanel" />
+                                    <Border Style="{StaticResource DockPanelBorderStyle}">
+                                        <DockPanel x:Name="PropertiesDockPanel" 
+                                                   Style="{StaticResource DockPanelStyle}"/>
+                                    </Border>
                                 </avalonDock:LayoutAnchorable>
                             </avalonDock:LayoutAnchorablePane>
                             <avalonDock:LayoutAnchorablePane>
                                 <avalonDock:LayoutAnchorable x:Name="StructureLayoutAnchorable" 
                                                              Title="Structure">
-                                    <DockPanel x:Name="StructureDockPanel" />
+                                    <Border Style="{StaticResource DockPanelBorderStyle}">
+                                        <DockPanel x:Name="StructureDockPanel" 
+                                                   Style="{StaticResource DockPanelStyle}"/>
+                                    </Border>
                                 </avalonDock:LayoutAnchorable>
                             </avalonDock:LayoutAnchorablePane>
                         </avalonDock:LayoutAnchorablePaneGroup>
