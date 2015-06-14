@@ -39,6 +39,9 @@
         <Grid>
             <avalonDock:DockingManager x:Name="PanelsDockManager"
                                        Style="{DynamicResource PanelStyle}">
+                <avalonDock:DockingManager.Theme>
+                    <avalonDock:VS2010Theme />
+                </avalonDock:DockingManager.Theme>
                 <avalonDock:LayoutRoot>
                     <avalonDock:LayoutPanel Orientation="Horizontal">
                         <avalonDock:LayoutAnchorablePaneGroup x:Name="LeftAnchorablePaneGroup"
@@ -52,12 +55,13 @@
                         </avalonDock:LayoutAnchorablePaneGroup>
                         <avalonDock:LayoutPanel Orientation="Vertical">
                             <avalonDock:LayoutDocumentPaneGroup x:Name="WorkspaceLayoutDocumentPaneGroup">
-                            <avalonDock:LayoutDocumentPane>
-                                <avalonDock:LayoutDocument x:Name="SimulationModuleLayoutDocument" 
+                                <avalonDock:LayoutDocumentPane>
+                                    <avalonDock:LayoutDocument x:Name="SimulationModuleLayoutDocument" 
                                                            Title="Simulation Model">
-                                    <Canvas x:Name="SimulationModelCanvas" />
-                                </avalonDock:LayoutDocument>
-                            </avalonDock:LayoutDocumentPane>
+                                        <Canvas x:Name="SimulationModelCanvas" />
+                                    </avalonDock:LayoutDocument>
+                                </avalonDock:LayoutDocumentPane>
+                                
                         </avalonDock:LayoutDocumentPaneGroup>
                             <avalonDock:LayoutAnchorablePaneGroup x:Name="DownLayoutAnchorablePaneGroup"
                                                                   DockHeight="150">
