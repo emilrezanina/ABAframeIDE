@@ -1,11 +1,43 @@
-﻿<controls:MetroWindow x:Class="ABAframeIDE.MainWindow"
+﻿<controls:MetroWindow 
+        x:Class="ABAframeIDE.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:shell="clr-namespace:Xceed;assembly=Xceed.Wpf.AvalonDock"
         xmlns:avalonDock="http://schemas.xceed.com/wpf/xaml/avalondock"
         xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+        Title="ABAframe IDE" Height="600" Width="800"
+        WindowStartupLocation="CenterScreen">
+    <DockPanel>
+        <StackPanel x:Name="MainMenusPanel"
+                    DockPanel.Dock="Top">
+            <Menu x:Name="MainMenu"
+                  SnapsToDevicePixels="True"  
+                  Margin ="2,0,0,0">
+                <MenuItem Header="File" />
+                <MenuItem Header="Edit" />
+                <MenuItem Header="View" />
+                <MenuItem Header="Model" />
+                <MenuItem Header="Verification" />
+                <MenuItem Header="Help" />
+            </Menu>
+            <WrapPanel>
+                <Button Content="Save" />
+                <Button Content="Print" />
+                <Button Content="Lock" />
+                <Button Content="Verification" />
+            </WrapPanel>
+        </StackPanel>
+        <StatusBar x:Name="ApplicationStatusBar"
+                   DockPanel.Dock="Bottom"
+                   Height="23"
+                   Background="DarkSlateBlue">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock><Run Text="Alarm level: " /></TextBlock>
+                <TextBlock Margin="5,0,0,0"><Run Text="3" /></TextBlock>
+            </StackPanel>
+        </StatusBar>
+        <Grid x:Name="MainGrid">
+            
+        </Grid>
+    </DockPanel>
 </controls:MetroWindow>
