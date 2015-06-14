@@ -36,79 +36,54 @@
                 <TextBlock Margin="5,0,0,0"><Run Text="3" /></TextBlock>
             </StackPanel>
         </StatusBar>
-        <Grid x:Name="MainGrid">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="2*" />
-                <ColumnDefinition Width="6*" ></ColumnDefinition>
-                <ColumnDefinition Width="2*"/>
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="8*" />
-                <RowDefinition Height="2*" />
-            </Grid.RowDefinitions>
-            <avalonDock:DockingManager x:Name="LeftDockingManager"
-                                       Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" 
+        <Grid>
+            <avalonDock:DockingManager x:Name="PanelsDockManager"
                                        Style="{DynamicResource PanelStyle}">
                 <avalonDock:LayoutRoot>
                     <avalonDock:LayoutPanel Orientation="Horizontal">
-                        <avalonDock:LayoutAnchorablePaneGroup>
+                        <avalonDock:LayoutAnchorablePaneGroup x:Name="LeftAnchorablePaneGroup"
+                                                              DockWidth="150" Orientation="Vertical">
                             <avalonDock:LayoutAnchorablePane>
-                                <avalonDock:LayoutAnchorable Title="Tools Palete">
+                                <avalonDock:LayoutAnchorable x:Name="ToolsPaleteLayoutAnchorable"
+                                    Title="Tools Palete">
                                     <DockPanel x:Name="ToolsPaleteDockPanel" />
                                 </avalonDock:LayoutAnchorable>
-                                
                             </avalonDock:LayoutAnchorablePane>
                         </avalonDock:LayoutAnchorablePaneGroup>
-
-                    </avalonDock:LayoutPanel>
-                </avalonDock:LayoutRoot>
-            </avalonDock:DockingManager>
-            <avalonDock:DockingManager x:Name="RightDockingManager"
-                                       Grid.Column="2" Grid.Row="0" Grid.RowSpan="2"
-                                       Style="{DynamicResource PanelStyle}">
-                <avalonDock:LayoutRoot>
-                    <avalonDock:LayoutPanel Orientation="Horizontal">
-                        <avalonDock:LayoutAnchorablePaneGroup>
-                            <avalonDock:LayoutAnchorablePane>
-                                <avalonDock:LayoutAnchorable Title="Properties">
-                                    <DockPanel x:Name="PropertiesDockPanel" />
-                                </avalonDock:LayoutAnchorable>
-                                <avalonDock:LayoutAnchorable Title="Structure">
-                                    <DockPanel x:Name="StructureDockPanel" />
-                                </avalonDock:LayoutAnchorable>
-                            </avalonDock:LayoutAnchorablePane>
-                        </avalonDock:LayoutAnchorablePaneGroup>
-                        
-                    </avalonDock:LayoutPanel>
-                </avalonDock:LayoutRoot>
-            </avalonDock:DockingManager>
-            <avalonDock:DockingManager x:Name="WorkspaceDockingManager"
-                                       Grid.Column="1" Grid.Row="0"
-                                       Style="{DynamicResource PanelStyle}">
-                <avalonDock:LayoutRoot>
-                    <avalonDock:LayoutPanel>
-                        <avalonDock:LayoutDocumentPaneGroup>
+                        <avalonDock:LayoutPanel Orientation="Vertical">
+                            <avalonDock:LayoutDocumentPaneGroup x:Name="WorkspaceLayoutDocumentPaneGroup">
                             <avalonDock:LayoutDocumentPane>
-                                <avalonDock:LayoutDocument Title="Simulation Model">
+                                <avalonDock:LayoutDocument x:Name="SimulationModuleLayoutDocument" 
+                                                           Title="Simulation Model">
                                     <Canvas x:Name="SimulationModelCanvas" />
                                 </avalonDock:LayoutDocument>
                             </avalonDock:LayoutDocumentPane>
                         </avalonDock:LayoutDocumentPaneGroup>
-                    </avalonDock:LayoutPanel>
-                </avalonDock:LayoutRoot>
-            </avalonDock:DockingManager>
-            <avalonDock:DockingManager x:Name="DownDockingManager"
-                                       Grid.Column="1" Grid.Row="1"
-                                       Style="{DynamicResource PanelStyle}">
-                <avalonDock:LayoutRoot>
-                    <avalonDock:LayoutPanel>
-                        <avalonDock:LayoutDocumentPaneGroup>
-                            <avalonDock:LayoutDocumentPane>
-                                <avalonDock:LayoutDocument Title="Message log">
-                                    <DockPanel x:Name="MessageLogDockPanel" />
-                                </avalonDock:LayoutDocument>
-                            </avalonDock:LayoutDocumentPane>
-                        </avalonDock:LayoutDocumentPaneGroup>
+                            <avalonDock:LayoutAnchorablePaneGroup x:Name="DownLayoutAnchorablePaneGroup"
+                                                                  DockHeight="150">
+                                <avalonDock:LayoutAnchorablePane>
+                                    <avalonDock:LayoutAnchorable x:Name="MessageLogLayoutAnchorable"
+                                                                 Title="Message Log">
+                                        <DockPanel x:Name="MessageLogDockPanel" />
+                                    </avalonDock:LayoutAnchorable>
+                                </avalonDock:LayoutAnchorablePane>
+                            </avalonDock:LayoutAnchorablePaneGroup>
+                        </avalonDock:LayoutPanel>
+                        <avalonDock:LayoutAnchorablePaneGroup x:Name="RightLayoutAnchorablePaneGroup"
+                            DockWidth="150" Orientation="Vertical">
+                            <avalonDock:LayoutAnchorablePane>
+                                <avalonDock:LayoutAnchorable x:Name="PropertiesLayoutAnchorable" 
+                                                             Title="Properties">
+                                    <DockPanel x:Name="PropertiesDockPanel" />
+                                </avalonDock:LayoutAnchorable>
+                            </avalonDock:LayoutAnchorablePane>
+                            <avalonDock:LayoutAnchorablePane>
+                                <avalonDock:LayoutAnchorable x:Name="StructureLayoutAnchorable" 
+                                                             Title="Structure">
+                                    <DockPanel x:Name="StructureDockPanel" />
+                                </avalonDock:LayoutAnchorable>
+                            </avalonDock:LayoutAnchorablePane>
+                        </avalonDock:LayoutAnchorablePaneGroup>
                     </avalonDock:LayoutPanel>
                 </avalonDock:LayoutRoot>
             </avalonDock:DockingManager>
