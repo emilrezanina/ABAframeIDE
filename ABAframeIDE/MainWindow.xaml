@@ -15,7 +15,20 @@
                   Margin ="2,0,0,0">
                 <MenuItem Header="File" />
                 <MenuItem Header="Edit" />
-                <MenuItem Header="View" />
+                <MenuItem Header="_View">
+                    <MenuItem Header="Message Log"
+                              IsChecked="{Binding MessageLog.IsVisible, Mode=TwoWay}"
+                              IsCheckable="True"/>
+                    <MenuItem Header="Properties"
+                              IsChecked="{Binding Properties.IsVisible, Mode=TwoWay}"
+                              IsCheckable="True"/>
+                    <MenuItem Header="Structure"
+                              IsChecked="{Binding Structure.IsVisible, Mode=TwoWay}"
+                              IsCheckable="True"/>
+                    <MenuItem Header="Tools Palete" 
+                              IsChecked="{Binding ToolsPalete.IsVisible, Mode=TwoWay}"
+                              IsCheckable="True"/>
+                </MenuItem>
                 <MenuItem Header="Model" />
                 <MenuItem Header="Verification" />
                 <MenuItem Header="Help" />
