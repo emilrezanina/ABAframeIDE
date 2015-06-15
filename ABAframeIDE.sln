@@ -5,9 +5,9 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ABAframeIDE", "ABAframeIDE\ABAframeIDE.csproj", "{517DC5C1-0DC9-4A1E-9F5D-2C1E85F74E49}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvalonDockMVVM.2010", "AvalonDockMVVM\AvalonDockMVVM.2010.csproj", "{482AD327-6622-412C-86FF-A6CC9D031626}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvalonDockMVVM", "AvalonDockMVVM\AvalonDockMVVM.csproj", "{482AD327-6622-412C-86FF-A6CC9D031626}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewModels.2010", "ViewModels\ViewModels.2010.csproj", "{4A81157C-A0FB-478A-ADF1-C1083EB47D14}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewModels", "ViewModels\ViewModels.csproj", "{4A81157C-A0FB-478A-ADF1-C1083EB47D14}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
