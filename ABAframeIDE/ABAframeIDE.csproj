@@ -129,6 +129,16 @@
   <ItemGroup>
     <Folder Include="ViewModel\Base\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AvalonDockMVVM\AvalonDockMVVM.csproj">
+      <Project>{482ad327-6622-412c-86ff-a6cc9d031626}</Project>
+      <Name>AvalonDockMVVM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ViewModels\ViewModels.csproj">
+      <Project>{4a81157c-a0fb-478a-adf1-c1083eb47d14}</Project>
+      <Name>ViewModels</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
