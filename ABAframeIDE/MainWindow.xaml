@@ -5,6 +5,7 @@
         xmlns:shell="clr-namespace:Xceed;assembly=Xceed.Wpf.AvalonDock"
         xmlns:avalonDock="http://schemas.xceed.com/wpf/xaml/avalondock"
         xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+        x:Name="mainWindow"
         Title="ABAframe IDE" Height="600" Width="800"
         WindowStartupLocation="CenterScreen">
     <DockPanel>
@@ -16,18 +17,22 @@
                 <MenuItem Header="File" />
                 <MenuItem Header="Edit" />
                 <MenuItem Header="_View">
-                    <MenuItem Header="Message Log"
-                              IsChecked="{Binding MessageLog.IsVisible, Mode=TwoWay}"
-                              IsCheckable="True"/>
-                    <MenuItem Header="Properties"
-                              IsChecked="{Binding Properties.IsVisible, Mode=TwoWay}"
-                              IsCheckable="True"/>
-                    <MenuItem Header="Structure"
-                              IsChecked="{Binding Structure.IsVisible, Mode=TwoWay}"
-                              IsCheckable="True"/>
-                    <MenuItem Header="Tools Palete" 
-                              IsChecked="{Binding ToolsPalete.IsVisible, Mode=TwoWay}"
-                              IsCheckable="True"/>
+                    <MenuItem
+                        Name="MessageLogViewMenuItem"
+                        Header="Message Log"
+                        Click="ToolsPalete_OnClick"/>
+                    <MenuItem 
+                        Name="PropertiesViewMenuItem"
+                        Header="Properties"
+                        Click="ToolsPalete_OnClick"/>
+                    <MenuItem 
+                        Name="StructureViewMenuItem"
+                        Header="Structure"
+                        Click="ToolsPalete_OnClick"/>
+                    <MenuItem 
+                        Name="ToolsPaleteViewMenuItem"
+                        Header="Tools Palete"
+                        Click="ToolsPalete_OnClick"/>
                 </MenuItem>
                 <MenuItem Header="Model" />
                 <MenuItem Header="Verification" />
@@ -60,7 +65,7 @@
                                                               DockWidth="150" Orientation="Vertical">
                             <avalonDock:LayoutAnchorablePane>
                                 <avalonDock:LayoutAnchorable x:Name="ToolsPaleteLayoutAnchorable"
-                                    Title="Tools Palete">
+                                                             Title="Tools Palete">
                                     <Border Style="{StaticResource DockPanelBorderStyle}">
                                         <DockPanel x:Name="ToolsPaleteDockPanel"
                                                    Style="{StaticResource DockPanelStyle}"/>

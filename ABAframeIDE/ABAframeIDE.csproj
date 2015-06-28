@@ -81,6 +81,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ViewModel\WorkspaceViewModel.cs" />
     <Page Include="View\LayoutStyles.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -99,6 +100,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ViewModel\Base\BaseViewModel.cs" />
+    <Compile Include="ViewModel\MessageLogViewModel.cs" />
+    <Compile Include="ViewModel\PropertiesViewModel.cs" />
+    <Compile Include="ViewModel\StructureViewModel.cs" />
+    <Compile Include="ViewModel\ToolsPaleteViewModel.cs" />
+    <Compile Include="Properties\Annotations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -127,17 +134,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="ViewModel\Base\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\AvalonDockMVVM\AvalonDockMVVM.csproj">
-      <Project>{482ad327-6622-412c-86ff-a6cc9d031626}</Project>
-      <Name>AvalonDockMVVM</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ViewModels\ViewModels.csproj">
-      <Project>{4a81157c-a0fb-478a-adf1-c1083eb47d14}</Project>
-      <Name>ViewModels</Name>
-    </ProjectReference>
+    <Folder Include="Model\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
