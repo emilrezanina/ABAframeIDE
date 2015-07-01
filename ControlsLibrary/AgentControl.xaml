@@ -22,10 +22,10 @@
     </UserControl.Resources>
     <UserControl.Triggers>
         <EventTrigger RoutedEvent="UIElement.MouseEnter" SourceName="UserControl">
-            <BeginStoryboard x:Name="OnMouseEnterAgent_BeginStoryboard" Storyboard="{StaticResource OnMouseEnterAgent}"/>
+            <BeginStoryboard x:Name="OnMouseEnterAgentBeginStoryboard" Storyboard="{StaticResource OnMouseEnterAgent}"/>
         </EventTrigger>
         <EventTrigger RoutedEvent="UIElement.MouseLeave" SourceName="UserControl">
-            <BeginStoryboard x:Name="OnMouseStopAgent_BeginStoryboard1" Storyboard="{StaticResource OnMouseStopAgent}"/>
+            <BeginStoryboard x:Name="OnMouseStopAgentBeginStoryboard" Storyboard="{StaticResource OnMouseStopAgent}"/>
         </EventTrigger>
     </UserControl.Triggers>
 
