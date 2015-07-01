@@ -20,19 +20,19 @@
                     <MenuItem
                         Name="MessageLogViewMenuItem"
                         Header="Message Log"
-                        Click="ToolsPalete_OnClick"/>
+                        Click="ViewMenuItem_OnClick"/>
                     <MenuItem 
                         Name="PropertiesViewMenuItem"
                         Header="Properties"
-                        Click="ToolsPalete_OnClick"/>
+                        Click="ViewMenuItem_OnClick"/>
                     <MenuItem 
                         Name="StructureViewMenuItem"
                         Header="Structure"
-                        Click="ToolsPalete_OnClick"/>
+                        Click="ViewMenuItem_OnClick"/>
                     <MenuItem 
                         Name="ToolsPaleteViewMenuItem"
                         Header="Tools Palete"
-                        Click="ToolsPalete_OnClick"/>
+                        Click="ViewMenuItem_OnClick"/>
                 </MenuItem>
                 <MenuItem Header="Model" />
                 <MenuItem Header="Verification" />
@@ -64,10 +64,10 @@
                         <avalonDock:LayoutAnchorablePaneGroup x:Name="LeftAnchorablePaneGroup"
                                                               DockWidth="150" Orientation="Vertical">
                             <avalonDock:LayoutAnchorablePane>
-                                <avalonDock:LayoutAnchorable x:Name="ToolsPaleteLayoutAnchorable"
-                                                             Title="Tools Palete">
+                                <avalonDock:LayoutAnchorable x:Name="ToolboxLayoutAnchorable"
+                                                             Title="Toolbox">
                                     <Border Style="{StaticResource DockPanelBorderStyle}">
-                                        <DockPanel x:Name="ToolsPaleteDockPanel"
+                                        <DockPanel x:Name="ToolboxDockPanel"
                                                    Style="{StaticResource DockPanelStyle}"/>
                                     </Border>
                                 </avalonDock:LayoutAnchorable>

@@ -104,7 +104,7 @@
     <Compile Include="ViewModel\MessageLogViewModel.cs" />
     <Compile Include="ViewModel\PropertiesViewModel.cs" />
     <Compile Include="ViewModel\StructureViewModel.cs" />
-    <Compile Include="ViewModel\ToolsPaleteViewModel.cs" />
+    <Compile Include="ViewModel\ToolboxViewModel.cs" />
     <Compile Include="Properties\Annotations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
