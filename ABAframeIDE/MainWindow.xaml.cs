@@ -58,7 +58,7 @@ namespace ABAframeIDE
             if (sender.Equals(StructureViewMenuItem))
                 return _structureViewModel;
 
-            if (sender.Equals(ToolsPaleteViewMenuItem))
+            if (sender.Equals(ToolboxViewMenuItem))
                 return _toolsPaleteModel;
 
             throw new Exception("MenuItem isn't from the view group.");

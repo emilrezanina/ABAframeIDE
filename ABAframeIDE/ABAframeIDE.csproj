@@ -82,7 +82,34 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="ViewModel\WorkspaceViewModel.cs" />
-    <Page Include="View\LayoutStyles.xaml">
+    <Compile Include="View\MessageLogContent.xaml.cs">
+      <DependentUpon>MessageLogContent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\PropertiesContent.xaml.cs">
+      <DependentUpon>PropertiesContent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\SimulationModelContent.xaml.cs">
+      <DependentUpon>SimulationModelContent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\StructuresContent.xaml.cs">
+      <DependentUpon>StructuresContent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ToolboxContent.xaml.cs">
+      <DependentUpon>ToolboxContent.xaml</DependentUpon>
+    </Compile>
+    <Page Include="View\MessageLogContent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\PropertiesContent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\StructuresContent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Styles\LayoutStyles.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -98,6 +125,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="View\SimulationModelContent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ToolboxContent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ViewModel\Base\BaseViewModel.cs" />

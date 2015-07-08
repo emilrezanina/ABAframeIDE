@@ -5,6 +5,7 @@
         xmlns:shell="clr-namespace:Xceed;assembly=Xceed.Wpf.AvalonDock"
         xmlns:avalonDock="http://schemas.xceed.com/wpf/xaml/avalondock"
         xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:view="clr-namespace:ABAframeIDE.View"
         x:Name="mainWindow"
         Title="ABAframe IDE" Height="600" Width="800"
         WindowStartupLocation="CenterScreen">
@@ -30,8 +31,8 @@
                         Header="Structure"
                         Click="ViewMenuItem_OnClick"/>
                     <MenuItem 
-                        Name="ToolsPaleteViewMenuItem"
-                        Header="Tools Palete"
+                        Name="ToolboxViewMenuItem"
+                        Header="Toolbox"
                         Click="ViewMenuItem_OnClick"/>
                 </MenuItem>
                 <MenuItem Header="Model" />
@@ -66,10 +67,7 @@
                             <avalonDock:LayoutAnchorablePane>
                                 <avalonDock:LayoutAnchorable x:Name="ToolboxLayoutAnchorable"
                                                              Title="Toolbox">
-                                    <Border Style="{StaticResource DockPanelBorderStyle}">
-                                        <DockPanel x:Name="ToolboxDockPanel"
-                                                   Style="{StaticResource DockPanelStyle}"/>
-                                    </Border>
+                                    <view:ToolboxContent x:Name="Toolbox"/>
                                 </avalonDock:LayoutAnchorable>
                             </avalonDock:LayoutAnchorablePane>
                         </avalonDock:LayoutAnchorablePaneGroup>
@@ -78,10 +76,7 @@
                                 <avalonDock:LayoutDocumentPane>
                                     <avalonDock:LayoutDocument x:Name="SimulationModuleLayoutDocument" 
                                                            Title="Simulation Model">
-                                        <Border Style="{StaticResource DockPanelBorderStyle}">
-                                            <Canvas x:Name="SimulationModelCanvas"
-                                                    Style="{StaticResource WorkspaceCanvasStyle}"/>
-                                        </Border>
+                                        <view:SimulationModelContent x:Name="SimulationModel"/>
                                     </avalonDock:LayoutDocument>
                                 </avalonDock:LayoutDocumentPane>
 
@@ -91,11 +86,7 @@
                                 <avalonDock:LayoutAnchorablePane>
                                     <avalonDock:LayoutAnchorable x:Name="MessageLogLayoutAnchorable"
                                                                  Title="Message Log">
-                                        <Border Style="{StaticResource DockPanelBorderStyle}">
-                                            <DockPanel x:Name="MessageLogDockPanel"
-                                                       Style="{StaticResource DockPanelStyle}" />
-                                        </Border>
-
+                                        <view:MessageLogContent x:Name="MessageLog"/>
                                     </avalonDock:LayoutAnchorable>
                                 </avalonDock:LayoutAnchorablePane>
                             </avalonDock:LayoutAnchorablePaneGroup>
@@ -106,19 +97,13 @@
                             <avalonDock:LayoutAnchorablePane>
                                 <avalonDock:LayoutAnchorable x:Name="PropertiesLayoutAnchorable" 
                                                              Title="Properties">
-                                    <Border Style="{StaticResource DockPanelBorderStyle}">
-                                        <DockPanel x:Name="PropertiesDockPanel" 
-                                                   Style="{StaticResource DockPanelStyle}"/>
-                                    </Border>
+                                    <view:PropertiesContent x:Name="Properties"/>
                                 </avalonDock:LayoutAnchorable>
                             </avalonDock:LayoutAnchorablePane>
                             <avalonDock:LayoutAnchorablePane>
                                 <avalonDock:LayoutAnchorable x:Name="StructureLayoutAnchorable" 
                                                              Title="Structure">
-                                    <Border Style="{StaticResource DockPanelBorderStyle}">
-                                        <DockPanel x:Name="StructureDockPanel" 
-                                                   Style="{StaticResource DockPanelStyle}"/>
-                                    </Border>
+                                    <view:StructuresContent x:Name="Structures"/>
                                 </avalonDock:LayoutAnchorable>
                             </avalonDock:LayoutAnchorablePane>
                         </avalonDock:LayoutAnchorablePaneGroup>
