@@ -11,6 +11,19 @@
                 <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Blue.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />
                 <ResourceDictionary Source="View/Styles/LayoutStyles.xaml" />
+
+                <ResourceDictionary Source="DiagramDesigner/Resources/Styles/Shared.xaml"/>
+                <ResourceDictionary Source="DiagramDesigner/Resources/Styles/ToolBar.xaml"/>
+                <ResourceDictionary Source="DiagramDesigner/Resources/Styles/GroupBox.xaml"/>
+                <ResourceDictionary Source="DiagramDesigner/Resources/Styles/Expander.xaml"/>
+                <ResourceDictionary Source="DiagramDesigner/Resources/Styles/ScrollBar.xaml"/>
+                <ResourceDictionary Source="DiagramDesigner/Resources/ApplicationToolbar.xaml"/>
+                <ResourceDictionary Source="DiagramDesigner/Resources/DesignerItem.xaml"/>
+                <ResourceDictionary Source="DiagramDesigner/Resources/ToolboxItem.xaml"/>
+                <ResourceDictionary Source="DiagramDesigner/Resources/Toolbox.xaml"/>
+                <ResourceDictionary Source="DiagramDesigner/Resources/Connection.xaml"/>
+                <ResourceDictionary Source="DiagramDesigner/Resources/Stencils/FlowChartStencils.xaml" />
+                <ResourceDictionary Source="DiagramDesigner/Resources/Stencils/ShapeStencils.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

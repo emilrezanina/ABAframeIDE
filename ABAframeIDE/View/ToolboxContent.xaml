@@ -4,12 +4,14 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:xcad="http://schemas.xceed.com/wpf/xaml/avalondock"
+             xmlns:view="clr-namespace:ABAframeIDE.View"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
-    <Border 
-            Style="{StaticResource DockPanelBorderStyle}">
-        <DockPanel 
-                x:Name="ToolboxDockPanel"
-                Style="{StaticResource DockPanelStyle}"/>
-    </Border>
+
+    <Grid>
+        <StackPanel Grid.Column="0" Margin="0,0,5,0">
+            <Expander Header="Flow Chart" Content="{StaticResource FlowChartStencils}" IsExpanded="True"/>
+            <Expander Header="Shapes" Content="{StaticResource ShapeStencils}" IsExpanded="True"/>
+        </StackPanel>
+    </Grid>
 </UserControl>
