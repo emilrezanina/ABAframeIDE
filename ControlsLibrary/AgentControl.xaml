@@ -42,7 +42,7 @@
                    Foreground="White" FontSize="10"
 			       VerticalAlignment="Center" HorizontalAlignment="Center" 
 			       TextWrapping="Wrap">
-			Agent Surroundings
+			Component Surroundings
         </TextBlock>
     </Grid>
 </UserControl>

@@ -6,7 +6,7 @@
         xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
         xmlns:view="clr-namespace:ABAframeIDE.View"
         x:Name="mainWindow"
-        Title="ABAframe IDE" Height="600" Width="800"
+        Title="ABAframe IDE" Height="600" Width="1000"
         WindowStartupLocation="CenterScreen">
     <DockPanel>
         <StackPanel x:Name="MainMenusPanel"
@@ -62,7 +62,7 @@
                 <avalonDock:LayoutRoot>
                     <avalonDock:LayoutPanel Orientation="Horizontal">
                         <avalonDock:LayoutAnchorablePaneGroup x:Name="LeftAnchorablePaneGroup"
-                                                              DockWidth="150" Orientation="Vertical">
+                                                              DockWidth="200" Orientation="Vertical">
                             <avalonDock:LayoutAnchorablePane>
                                 <avalonDock:LayoutAnchorable x:Name="ToolboxLayoutAnchorable"
                                                              Title="Toolbox">
@@ -81,7 +81,7 @@
 
                             </avalonDock:LayoutDocumentPaneGroup>
                             <avalonDock:LayoutAnchorablePaneGroup x:Name="DownLayoutAnchorablePaneGroup"
-                                                                  DockHeight="150">
+                                                                  DockHeight="200">
                                 <avalonDock:LayoutAnchorablePane>
                                     <avalonDock:LayoutAnchorable x:Name="MessageLogLayoutAnchorable"
                                                                  Title="Message Log">

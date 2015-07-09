@@ -12,7 +12,6 @@
         <GroupBox Header="File" Style="{StaticResource ToolbarGroup}" Margin="5,3,3,3">
             <StackPanel Grid.Row="1" Orientation="Horizontal">
                 <Button Margin="3" Width="55" Style="{StaticResource ToolBarButtonBaseStyle}"
-                        HorizontalContentAlignment="Center"
                         Command="{x:Static ApplicationCommands.New}"
                         CommandTarget="{Binding ElementName=MyDesigner}">
                     <Button.Content>
@@ -21,7 +20,7 @@
                                 <RowDefinition Height="4*"/>
                                 <RowDefinition Height="1*"/>
                             </Grid.RowDefinitions>
-                            <Image Source="Images/GenericDocument.png" Width="45"/>
+                            <Image Source="../Resources/Images/GenericDocument.png" Width="45"/>
                             <TextBlock Grid.Row="1" Text="New" VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
                         </Grid>
                     </Button.Content>
@@ -37,7 +36,7 @@
                                     <ColumnDefinition/>
                                     <ColumnDefinition/>
                                 </Grid.ColumnDefinitions>
-                                <Image Source="Images/OpenFolder.png" Width="16"/>
+                                <Image Source="../Resources/Images/OpenFolder.png" Width="16"/>
                                 <TextBlock Margin="3,0,3,0" Text="Open" VerticalAlignment="Center"  Grid.Column="1"/>
                             </Grid>
                         </Button.Content>
@@ -52,7 +51,7 @@
                                     <ColumnDefinition/>
                                     <ColumnDefinition />
                                 </Grid.ColumnDefinitions>
-                                <Image Source="Images/Save.png" Width="16"/>
+                                <Image Source="../Resources/Images/Save.png" Width="16"/>
                                 <TextBlock Margin="3,0,3,0" Text="Save" VerticalAlignment="Center" Grid.Column="1"/>
                             </Grid>
                         </Button.Content>
@@ -67,7 +66,7 @@
                                     <ColumnDefinition/>
                                     <ColumnDefinition />
                                 </Grid.ColumnDefinitions>
-                                <Image Source="Images/Print.png" Width="16"/>
+                                <Image Source="../Resources/Images/Print.png" Width="16"/>
                                 <TextBlock Margin="3,0,3,0" Text="Print" VerticalAlignment="Center" Grid.Column="1"/>
                             </Grid>
                         </Button.Content>
@@ -89,7 +88,7 @@
                                 <RowDefinition Height="4*"/>
                                 <RowDefinition Height="1*"/>
                             </Grid.RowDefinitions>
-                            <Image Source="Images/PasteBig.png" Width="45"/>
+                            <Image Source="../Resources/Images/PasteBig.png" Width="45"/>
                             <TextBlock Grid.Row="1" Text="Paste" VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
                         </Grid>
                     </Button.Content>
@@ -105,7 +104,7 @@
                                     <ColumnDefinition/>
                                     <ColumnDefinition />
                                 </Grid.ColumnDefinitions>
-                                <Image Source="Images/Cut.png" Width="16"/>
+                                <Image Source="../Resources/Images/Cut.png" Width="16"/>
                                 <TextBlock Margin="3,0,3,0" Text="Cut" VerticalAlignment="Center" Grid.Column="1"/>
                             </Grid>
                         </Button.Content>
@@ -120,7 +119,7 @@
                                     <ColumnDefinition/>
                                     <ColumnDefinition />
                                 </Grid.ColumnDefinitions>
-                                <Image Source="Images/Copy.png" Width="16"/>
+                                <Image Source="../Resources/Images/Copy.png" Width="16"/>
                                 <TextBlock Margin="3,0,3,0" Text="Copy" VerticalAlignment="Center" Grid.Column="1"/>
                             </Grid>
                         </Button.Content>
@@ -135,7 +134,7 @@
                                     <ColumnDefinition/>
                                     <ColumnDefinition />
                                 </Grid.ColumnDefinitions>
-                                <Image Source="Images/Delete.png" Width="16"/>
+                                <Image Source="../Resources/Images/Delete.png" Width="16"/>
                                 <TextBlock Margin="3,0,3,0" Text="Delete" VerticalAlignment="Center" Grid.Column="1"/>
                             </Grid>
                         </Button.Content>
@@ -158,21 +157,21 @@
                                     Command="{x:Static s:DesignerCanvas.AlignLeft}"
                                     CommandTarget="{Binding ElementName=MyDesigner}">
                                 <Button.Content>
-                                    <Image Source="Images/AlignObjectsLeft.png" Width="16"/>
+                                    <Image Source="../Resources/Images/AlignObjectsLeft.png" Width="16"/>
                                 </Button.Content>
                             </Button>
                             <Button Padding="5" Style="{StaticResource ToolBarButtonBaseStyle}"
                                     Command="{x:Static s:DesignerCanvas.AlignHorizontalCenters}"
                                     CommandTarget="{Binding ElementName=MyDesigner}">
                                 <Button.Content>
-                                    <Image Source="Images/AlignObjectsCenteredHorizontal.png" Width="16"/>
+                                    <Image Source="../Resources/Images/AlignObjectsCenteredHorizontal.png" Width="16"/>
                                 </Button.Content>
                             </Button>
                             <Button Padding="5" Style="{StaticResource ToolBarButtonBaseStyle}"
                                     Command="{x:Static s:DesignerCanvas.AlignRight}"
                                     CommandTarget="{Binding ElementName=MyDesigner}">
                                 <Button.Content>
-                                    <Image Source="Images/AlignObjectsRight.png" Width="16"/>
+                                    <Image Source="../Resources/Images/AlignObjectsRight.png" Width="16"/>
                                 </Button.Content>
                             </Button>
                         </StackPanel>
@@ -183,21 +182,21 @@
                                     Command="{x:Static s:DesignerCanvas.AlignTop}"
                                     CommandTarget="{Binding ElementName=MyDesigner}">
                                 <Button.Content>
-                                    <Image Source="Images/AlignObjectsTop.png" Width="16"/>
+                                    <Image Source="../Resources/Images/AlignObjectsTop.png" Width="16"/>
                                 </Button.Content>
                             </Button>
                             <Button Padding="5" Style="{StaticResource ToolBarButtonBaseStyle}"
                                     Command="{x:Static s:DesignerCanvas.AlignVerticalCenters}"
                                     CommandTarget="{Binding ElementName=MyDesigner}">
                                 <Button.Content>
-                                    <Image Source="Images/AlignObjectsCenteredVertical.png" Width="16"/>
+                                    <Image Source="../Resources/Images/AlignObjectsCenteredVertical.png" Width="16"/>
                                 </Button.Content>
                             </Button>
                             <Button Padding="5" Style="{StaticResource ToolBarButtonBaseStyle}"
                                     Command="{x:Static s:DesignerCanvas.AlignBottom}"
                                     CommandTarget="{Binding ElementName=MyDesigner}">
                                 <Button.Content>
-                                    <Image Source="Images/AlignObjectsBottom.png" Width="16"/>
+                                    <Image Source="../Resources/Images/AlignObjectsBottom.png" Width="16"/>
                                 </Button.Content>
                             </Button>
                         </StackPanel>
@@ -214,7 +213,7 @@
                                     <ColumnDefinition/>
                                     <ColumnDefinition />
                                 </Grid.ColumnDefinitions>
-                                <Image Source="Images/DistributeObjectsHorizontal.png" Width="16"/>
+                                <Image Source="../Resources/Images/DistributeObjectsHorizontal.png" Width="16"/>
                                 <TextBlock Margin="3" Text="Horizontal" VerticalAlignment="Center" Grid.Column="1"/>
                             </Grid>
                         </Button.Content>
@@ -229,7 +228,7 @@
                                     <ColumnDefinition/>
                                     <ColumnDefinition />
                                 </Grid.ColumnDefinitions>
-                                <Image Source="Images/DistributeObjectsVertical.png" Width="16"/>
+                                <Image Source="../Resources/Images/DistributeObjectsVertical.png" Width="16"/>
                                 <TextBlock Margin="3" Text="Vertical" VerticalAlignment="Center" Grid.Column="1"/>
                             </Grid>
                         </Button.Content>
@@ -259,7 +258,7 @@
                                     <ColumnDefinition/>
                                     <ColumnDefinition />
                                 </Grid.ColumnDefinitions>
-                                <Image Source="Images/Group.png" Width="16"/>
+                                <Image Source="../Resources/Images/Group.png" Width="16"/>
                                 <TextBlock Margin="3" Text="Group" VerticalAlignment="Center" Grid.Column="1"/>
                             </Grid>
                         </Button.Content>
@@ -274,7 +273,7 @@
                                     <ColumnDefinition/>
                                     <ColumnDefinition />
                                 </Grid.ColumnDefinitions>
-                                <Image Source="Images/Ungroup.png" Width="16"/>
+                                <Image Source="../Resources/Images/Ungroup.png" Width="16"/>
                                 <TextBlock Margin="3" Text="Ungroup" VerticalAlignment="Center" Grid.Column="1"/>
                             </Grid>
                         </Button.Content>
@@ -291,7 +290,7 @@
                                     <ColumnDefinition/>
                                     <ColumnDefinition />
                                 </Grid.ColumnDefinitions>
-                                <Image Source="Images/BringForward.png" Width="16"/>
+                                <Image Source="../Resources/Images/BringForward.png" Width="16"/>
                                 <TextBlock Margin="3" Text="Forward" VerticalAlignment="Center" Grid.Column="1"/>
                             </Grid>
                         </Button.Content>
@@ -306,7 +305,7 @@
                                     <ColumnDefinition/>
                                     <ColumnDefinition />
                                 </Grid.ColumnDefinitions>
-                                <Image Source="Images/BringToFront.png" Width="16"/>
+                                <Image Source="../Resources/Images/BringToFront.png" Width="16"/>
                                 <TextBlock Margin="3" Text="To Front" VerticalAlignment="Center" Grid.Column="1"/>
                             </Grid>
                         </Button.Content>
@@ -327,7 +326,7 @@
                                     <ColumnDefinition/>
                                     <ColumnDefinition />
                                 </Grid.ColumnDefinitions>
-                                <Image Source="Images/SendBackward.png" Width="16"/>
+                                <Image Source="../Resources/Images/SendBackward.png" Width="16"/>
                                 <TextBlock Margin="3" Text="Backward" VerticalAlignment="Center"  Grid.Column="1"/>
                              </Grid>
                         </Button.Content>
@@ -342,7 +341,7 @@
                                     <ColumnDefinition/>
                                     <ColumnDefinition />
                                 </Grid.ColumnDefinitions>
-                                <Image Source="Images/SendToBack.png" Width="16"/>
+                                <Image Source="../Resources/Images/SendToBack.png" Width="16"/>
                                 <TextBlock Margin="3" Text="To Back" VerticalAlignment="Center" Grid.Column="1"/>
                             </Grid>
                         </Button.Content>

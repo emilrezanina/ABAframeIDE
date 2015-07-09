@@ -2,9 +2,9 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:s="clr-namespace:DiagramDesigner;assembly=DiagramDesigner">
   <Style TargetType="{x:Type s:ToolboxItem}">
-    <Setter Property="Control.Padding" Value="10"/>
-    <Setter Property="ContentControl.HorizontalContentAlignment" Value="Stretch"/>
-    <Setter Property="ContentControl.VerticalContentAlignment" Value="Stretch"/>
+    <Setter Property="Padding" Value="10"/>
+    <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+    <Setter Property="VerticalContentAlignment" Value="Stretch"/>
     <Setter Property="ToolTip" Value="{Binding ToolTip}"/>
     <Setter Property="Template">
       <Setter.Value>

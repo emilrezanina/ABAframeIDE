@@ -3,59 +3,84 @@
                     xmlns:s="clr-namespace:DiagramDesigner;assembly=DiagramDesigner"
                     xmlns:c="clr-namespace:DiagramDesigner.Controls;assembly=DiagramDesigner">
 
-  <RadialGradientBrush x:Key="RadialBrushOrange" Center="0.2, 0.2" GradientOrigin="0.2, 0.2" RadiusX="0.8" RadiusY="0.8">
-    <GradientStop Color="White" Offset="0"/>
-    <GradientStop Color="Orange" Offset="0.9"/>
-  </RadialGradientBrush>
+    <Brush x:Key="ItemStroke">#FFD69436</Brush>
+    <Style x:Key="FlowChartItemStyle" TargetType="Path">
+        <Setter Property="Fill" Value="{StaticResource ItemBrush}"/>
+        <Setter Property="Stroke" Value="{StaticResource ItemStroke}"/>
+        <Setter Property="StrokeThickness" Value="1"/>
+        <Setter Property="StrokeLineJoin" Value="Round"/>
+        <Setter Property="Stretch" Value="Fill"/>
+        <Setter Property="IsHitTestVisible" Value="False"/>
+        <Setter Property="SnapsToDevicePixels" Value="True"/>
+        <!--<Setter Property="BitmapEffect">
+      <Setter.Value>
+        <DropShadowBitmapEffect Color="#AAA" Direction="315" ShadowDepth="10"
+                                Softness="0.5" Opacity="0.6"/>
+      </Setter.Value>
+    </Setter>-->
+    </Style>
+    <Style x:Key="Component" TargetType="Path" BasedOn="{StaticResource FlowChartItemStyle}">
+        <Setter Property="Data" Value="M 20,40 A 20,20 0 0 1 20,0 H 40 A 20,20 0 0 1 40,40 Z"/>
+    </Style>
 
-  <RadialGradientBrush x:Key="RadialBrushGreen" Center="0.2, 0.2" GradientOrigin="0.2, 0.2" RadiusX="0.8" RadiusY="0.8">
-    <GradientStop Color="White" Offset="0"/>
-    <GradientStop Color="Green" Offset="0.9"/>
-  </RadialGradientBrush>
+    <Style x:Key="ComponentDragThumb" TargetType="Path" BasedOn="{StaticResource Component}">
+        <Setter Property="IsHitTestVisible" Value="true"/>
+        <Setter Property="Fill" Value="Transparent"/>
+        <Setter Property="Stroke" Value="Transparent"/>
+    </Style>
 
-  <RadialGradientBrush x:Key="RadialBrushBlue" Center="0.2, 0.2" GradientOrigin="0.2, 0.2" RadiusX="0.8" RadiusY="0.8">
-    <GradientStop Color="White" Offset="0"/>
-    <GradientStop Color="Blue" Offset="0.9"/>
-  </RadialGradientBrush>
+    <s:Toolbox x:Key="CompositionStencils" ItemSize="150,50">
+        <ItemsControl.Items>
+            <Path Style="{StaticResource Component}" ToolTip="Query">
+                <s:DesignerItem.DragThumbTemplate>
+                    <ControlTemplate>
+                        <Path Style="{StaticResource ComponentDragThumb}"/>
+                    </ControlTemplate>
+                </s:DesignerItem.DragThumbTemplate>
+            </Path>
 
-  <LinearGradientBrush x:Key="BrushStar" StartPoint="0,0" EndPoint="0,1" Opacity="1">
-    <LinearGradientBrush.GradientStops>
-      <GradientStop Color="#FAFBE9" Offset="0.1" />
-      <GradientStop Color="Orange" Offset="1" />
-    </LinearGradientBrush.GradientStops>
-  </LinearGradientBrush>
+            <Path Style="{StaticResource Component}" ToolTip="Advisor">
+                <s:DesignerItem.DragThumbTemplate>
+                    <ControlTemplate>
+                        <Path Style="{StaticResource ComponentDragThumb}"/>
+                    </ControlTemplate>
+                </s:DesignerItem.DragThumbTemplate>
+            </Path>
 
-  <s:Toolbox x:Key="CompositionStencils" ItemSize="60,60">
-    <ItemsControl.Items>
+            <Path Style="{StaticResource Component}" ToolTip="Monitor">
+                <s:DesignerItem.DragThumbTemplate>
+                    <ControlTemplate>
+                        <Path Style="{StaticResource ComponentDragThumb}"/>
+                    </ControlTemplate>
+                </s:DesignerItem.DragThumbTemplate>
+            </Path>
 
-      <Ellipse Fill="{StaticResource RadialBrushOrange}" ToolTip="Ellipse" IsHitTestVisible="false"/>
-      <Ellipse Fill="{StaticResource RadialBrushBlue}" ToolTip="Ellipse" IsHitTestVisible="false"/>
-      <Ellipse Fill="{StaticResource RadialBrushGreen}" ToolTip="Ellipse" IsHitTestVisible="false"/>
+            <Path Style="{StaticResource Component}" ToolTip="Planner">
+                <s:DesignerItem.DragThumbTemplate>
+                    <ControlTemplate>
+                        <Path Style="{StaticResource ComponentDragThumb}"/>
+                    </ControlTemplate>
+                </s:DesignerItem.DragThumbTemplate>
+            </Path>
 
-      <Path Stretch="Fill" IsHitTestVisible="false"
-            StrokeLineJoin="Round"
-            Fill="{StaticResource BrushStar}"
-            Stroke="#AAFF8C00"
-            StrokeThickness="3"
-            Data="M 9,2 11,7 17,7 12,10 14,15 9,12 4,15 6,10 1,7 7,7 Z">
-        <s:DesignerItem.DragThumbTemplate>
-          <ControlTemplate>
-            <Path Fill="Transparent" Stretch="Fill" Data="M 9,2 11,7 17,7 12,10 14,15 9,12 4,15 6,10 1,7 7,7 Z"/>
-          </ControlTemplate>
-        </s:DesignerItem.DragThumbTemplate>
-        <s:DesignerItem.ConnectorDecoratorTemplate>
-          <ControlTemplate>
-            <c:RelativePositionPanel Margin="-4">
-              <s:Connector x:Name="Top1" Orientation="Top" c:RelativePositionPanel.RelativePosition="0.5,0"/>
-              <s:Connector x:Name="Top2" Orientation="Left" c:RelativePositionPanel.RelativePosition="0,0.385"/>
-              <s:Connector x:Name="Top3" Orientation="Right" c:RelativePositionPanel.RelativePosition="1,0.385"/>
-              <s:Connector x:Name="Top4" Orientation="Bottom" c:RelativePositionPanel.RelativePosition="0.185,1"/>
-              <s:Connector x:Name="Top5" Orientation="Bottom" c:RelativePositionPanel.RelativePosition="0.815,1"/>
-            </c:RelativePositionPanel>
-          </ControlTemplate>
-        </s:DesignerItem.ConnectorDecoratorTemplate>
-      </Path>
+            <Path Style="{StaticResource Component}" ToolTip="Process">
+                <s:DesignerItem.DragThumbTemplate>
+                    <ControlTemplate>
+                        <Path Style="{StaticResource ComponentDragThumb}"/>
+                    </ControlTemplate>
+                </s:DesignerItem.DragThumbTemplate>
+            </Path>
 
-    </ItemsControl.Items>
-  </s:Toolbox>
+            <Path Style="{StaticResource Component}" ToolTip="Action">
+                <s:DesignerItem.DragThumbTemplate>
+                    <ControlTemplate>
+                        <Path Style="{StaticResource ComponentDragThumb}"/>
+                    </ControlTemplate>
+                </s:DesignerItem.DragThumbTemplate>
+            </Path>
+
+
+
+        </ItemsControl.Items>
+    </s:Toolbox>
 </ResourceDictionary>
