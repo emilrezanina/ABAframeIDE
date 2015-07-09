@@ -270,7 +270,7 @@
     <Setter Property="Stroke" Value="Transparent"/>
   </Style>
 
-  <s:Toolbox x:Key="FlowChartStencils" ItemSize="60,50" SnapsToDevicePixels="True"
+  <s:Toolbox x:Key="SimulationModelStencils" ItemSize="60,50" SnapsToDevicePixels="True"
              ScrollViewer.HorizontalScrollBarVisibility="Disabled">
     <ItemsControl.Items>
 

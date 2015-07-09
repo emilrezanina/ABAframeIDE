@@ -22,8 +22,8 @@
                 <ResourceDictionary Source="DiagramDesigner/Resources/ToolboxItem.xaml"/>
                 <ResourceDictionary Source="DiagramDesigner/Resources/Toolbox.xaml"/>
                 <ResourceDictionary Source="DiagramDesigner/Resources/Connection.xaml"/>
-                <ResourceDictionary Source="DiagramDesigner/Resources/Stencils/FlowChartStencils.xaml" />
-                <ResourceDictionary Source="DiagramDesigner/Resources/Stencils/ShapeStencils.xaml" />
+                <ResourceDictionary Source="DiagramDesigner/Resources/Stencils/SimulationModelStencils.xaml" />
+                <ResourceDictionary Source="DiagramDesigner/Resources/Stencils/CompositionStencils.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

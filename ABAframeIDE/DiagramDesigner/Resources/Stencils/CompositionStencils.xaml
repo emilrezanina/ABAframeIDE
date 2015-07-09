@@ -25,7 +25,7 @@
     </LinearGradientBrush.GradientStops>
   </LinearGradientBrush>
 
-  <s:Toolbox x:Key="ShapeStencils" ItemSize="60,60">
+  <s:Toolbox x:Key="CompositionStencils" ItemSize="60,60">
     <ItemsControl.Items>
 
       <Ellipse Fill="{StaticResource RadialBrushOrange}" ToolTip="Ellipse" IsHitTestVisible="false"/>
