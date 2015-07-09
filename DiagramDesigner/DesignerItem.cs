@@ -3,9 +3,9 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
-using ABAframeIDE.DiagramDesigner.Controls;
+using DiagramDesigner.Controls;
 
-namespace ABAframeIDE.DiagramDesigner
+namespace DiagramDesigner
 {
     //These attributes identify the types of the named parts that are used for templating
     [TemplatePart(Name = "PART_DragThumb", Type = typeof(DragThumb))]

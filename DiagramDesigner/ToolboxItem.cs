@@ -5,7 +5,7 @@ using System.Windows.Input;
 using System.Windows.Markup;
 using System.Windows.Media;
 
-namespace ABAframeIDE.DiagramDesigner
+namespace DiagramDesigner
 {
     // Represents a selectable item in the Toolbox/>.
     public class ToolboxItem : ContentControl

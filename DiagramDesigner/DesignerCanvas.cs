@@ -7,7 +7,7 @@ using System.Windows.Input;
 using System.Windows.Markup;
 using System.Xml;
 
-namespace ABAframeIDE.DiagramDesigner
+namespace DiagramDesigner
 {
     public partial class DesignerCanvas : Canvas
     {

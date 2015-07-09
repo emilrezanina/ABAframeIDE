@@ -3,7 +3,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 
-namespace ABAframeIDE.DiagramDesigner.Controls
+namespace DiagramDesigner.Controls
 {
     public class RelativePositionPanel : Panel
     {

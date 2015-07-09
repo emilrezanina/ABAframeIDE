@@ -4,14 +4,14 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:view="clr-namespace:ABAframeIDE.View"
-             xmlns:diagramDesigner="clr-namespace:ABAframeIDE.DiagramDesigner"
+             xmlns:diagramDesigner="clr-namespace:DiagramDesigner;assembly=DiagramDesigner"
              mc:Ignorable="d" 
              d:DesignHeight="1000" d:DesignWidth="1000">
     <UserControl.Resources>
         <ContextMenu x:Key="DesignerCanvasContextMenu">
             <MenuItem Header="Paste" Command="{x:Static ApplicationCommands.Paste}">
                 <MenuItem.Icon>
-                    <Image Source="../DiagramDesigner/Resources/Images/Paste.png" Width="16"/>
+                    <Image Source="../Resources/Images/Paste.png" Width="16"/>
                 </MenuItem.Icon>
             </MenuItem>
             <MenuItem Header="Select All" Command="{x:Static diagramDesigner:DesignerCanvas.SelectAll}"/>

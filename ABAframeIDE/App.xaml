@@ -12,18 +12,18 @@
                 <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />
                 <ResourceDictionary Source="View/Styles/LayoutStyles.xaml" />
 
-                <ResourceDictionary Source="DiagramDesigner/Resources/Styles/Shared.xaml"/>
-                <ResourceDictionary Source="DiagramDesigner/Resources/Styles/ToolBar.xaml"/>
-                <ResourceDictionary Source="DiagramDesigner/Resources/Styles/GroupBox.xaml"/>
-                <ResourceDictionary Source="DiagramDesigner/Resources/Styles/Expander.xaml"/>
-                <ResourceDictionary Source="DiagramDesigner/Resources/Styles/ScrollBar.xaml"/>
-                <ResourceDictionary Source="DiagramDesigner/Resources/ApplicationToolbar.xaml"/>
-                <ResourceDictionary Source="DiagramDesigner/Resources/DesignerItem.xaml"/>
-                <ResourceDictionary Source="DiagramDesigner/Resources/ToolboxItem.xaml"/>
-                <ResourceDictionary Source="DiagramDesigner/Resources/Toolbox.xaml"/>
-                <ResourceDictionary Source="DiagramDesigner/Resources/Connection.xaml"/>
-                <ResourceDictionary Source="DiagramDesigner/Resources/Stencils/SimulationModelStencils.xaml" />
-                <ResourceDictionary Source="DiagramDesigner/Resources/Stencils/CompositionStencils.xaml" />
+                <ResourceDictionary Source="Resources/Styles/Shared.xaml"/>
+                <ResourceDictionary Source="Resources/Styles/ToolBar.xaml"/>
+                <ResourceDictionary Source="Resources/Styles/GroupBox.xaml"/>
+                <ResourceDictionary Source="Resources/Styles/Expander.xaml"/>
+                <ResourceDictionary Source="/Resources/Styles/ScrollBar.xaml"/>
+                <ResourceDictionary Source="Resources/ApplicationToolbar.xaml"/>
+                <ResourceDictionary Source="Resources/DesignerItem.xaml"/>
+                <ResourceDictionary Source="Resources/ToolboxItem.xaml"/>
+                <ResourceDictionary Source="Resources/Toolbox.xaml"/>
+                <ResourceDictionary Source="Resources/Connection.xaml"/>
+                <ResourceDictionary Source="Resources/Stencils/SimulationModelStencils.xaml" />
+                <ResourceDictionary Source="Resources/Stencils/CompositionStencils.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

@@ -12,7 +12,7 @@ using System.Xml;
 using System.Xml.Linq;
 using Microsoft.Win32;
 
-namespace ABAframeIDE.DiagramDesigner
+namespace DiagramDesigner
 {
     public partial class DesignerCanvas
     {

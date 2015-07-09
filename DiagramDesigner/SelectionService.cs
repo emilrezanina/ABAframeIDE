@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace ABAframeIDE.DiagramDesigner
+namespace DiagramDesigner
 {
     internal class SelectionService
     {

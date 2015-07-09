@@ -1,7 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
 
-namespace ABAframeIDE.DiagramDesigner
+namespace DiagramDesigner
 {
     // Implements ItemsControl for ToolboxItems    
     public class Toolbox : ItemsControl

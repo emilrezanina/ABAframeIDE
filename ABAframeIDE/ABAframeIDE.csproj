@@ -81,23 +81,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="DiagramDesigner\Connection.cs" />
-    <Compile Include="DiagramDesigner\ConnectionAdorner.cs" />
-    <Compile Include="DiagramDesigner\Connector.cs" />
-    <Compile Include="DiagramDesigner\ConnectorAdorner.cs" />
-    <Compile Include="DiagramDesigner\Controls\DragThumb.cs" />
-    <Compile Include="DiagramDesigner\Controls\RelativePositionPanel.cs" />
-    <Compile Include="DiagramDesigner\Controls\ResizeThumb.cs" />
-    <Compile Include="DiagramDesigner\DesignerCanvas.Commands.cs" />
-    <Compile Include="DiagramDesigner\DesignerCanvas.cs" />
-    <Compile Include="DiagramDesigner\DesignerItem.cs" />
-    <Compile Include="DiagramDesigner\IGroupable.cs" />
-    <Compile Include="DiagramDesigner\ISelectable.cs" />
-    <Compile Include="DiagramDesigner\PathFinder.cs" />
-    <Compile Include="DiagramDesigner\RubberbandAdorner.cs" />
-    <Compile Include="DiagramDesigner\SelectionService.cs" />
-    <Compile Include="DiagramDesigner\Toolbox.cs" />
-    <Compile Include="DiagramDesigner\ToolboxItem.cs" />
     <Compile Include="ViewModel\WorkspaceViewModel.cs" />
     <Compile Include="View\MessageLogContent.xaml.cs">
       <DependentUpon>MessageLogContent.xaml</DependentUpon>
@@ -114,51 +97,51 @@
     <Compile Include="View\ToolboxContent.xaml.cs">
       <DependentUpon>ToolboxContent.xaml</DependentUpon>
     </Compile>
-    <Page Include="DiagramDesigner\Resources\ApplicationToolbar.xaml">
+    <Page Include="Resources\ApplicationToolbar.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="DiagramDesigner\Resources\Connection.xaml">
+    <Page Include="Resources\Connection.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="DiagramDesigner\Resources\DesignerItem.xaml">
+    <Page Include="Resources\DesignerItem.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="DiagramDesigner\Resources\Stencils\SimulationModelStencils.xaml">
+    <Page Include="Resources\Stencils\SimulationModelStencils.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="DiagramDesigner\Resources\Stencils\CompositionStencils.xaml">
+    <Page Include="Resources\Stencils\CompositionStencils.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="DiagramDesigner\Resources\Styles\Expander.xaml">
+    <Page Include="Resources\Styles\Expander.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="DiagramDesigner\Resources\Styles\GroupBox.xaml">
+    <Page Include="Resources\Styles\GroupBox.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="DiagramDesigner\Resources\Styles\ScrollBar.xaml">
+    <Page Include="Resources\Styles\ScrollBar.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="DiagramDesigner\Resources\Styles\Shared.xaml">
+    <Page Include="Resources\Styles\Shared.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="DiagramDesigner\Resources\Styles\ToolBar.xaml">
+    <Page Include="Resources\Styles\ToolBar.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="DiagramDesigner\Resources\Toolbox.xaml">
+    <Page Include="Resources\Toolbox.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="DiagramDesigner\Resources\ToolboxItem.xaml">
+    <Page Include="Resources\ToolboxItem.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -239,31 +222,35 @@
       <Project>{9308c067-a32d-4c2c-8ea9-cb1908796db5}</Project>
       <Name>ControlsLibrary</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DiagramDesigner\DiagramDesigner.csproj">
+      <Project>{b597ee3a-c851-47a7-a757-30d68336b9b4}</Project>
+      <Name>DiagramDesigner</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="DiagramDesigner\Resources\Images\AlignObjectsBottom.png" />
-    <Resource Include="DiagramDesigner\Resources\Images\AlignObjectsCenteredHorizontal.png" />
-    <Resource Include="DiagramDesigner\Resources\Images\AlignObjectsCenteredVertical.png" />
-    <Resource Include="DiagramDesigner\Resources\Images\AlignObjectsLeft.png" />
-    <Resource Include="DiagramDesigner\Resources\Images\AlignObjectsRight.png" />
-    <Resource Include="DiagramDesigner\Resources\Images\AlignObjectsTop.png" />
-    <Resource Include="DiagramDesigner\Resources\Images\BringForward.png" />
-    <Resource Include="DiagramDesigner\Resources\Images\BringToFront.png" />
-    <Resource Include="DiagramDesigner\Resources\Images\Copy.png" />
-    <Resource Include="DiagramDesigner\Resources\Images\Cut.png" />
-    <Resource Include="DiagramDesigner\Resources\Images\Delete.png" />
-    <Resource Include="DiagramDesigner\Resources\Images\DistributeObjectsHorizontal.png" />
-    <Resource Include="DiagramDesigner\Resources\Images\DistributeObjectsVertical.png" />
-    <Resource Include="DiagramDesigner\Resources\Images\GenericDocument.png" />
-    <Resource Include="DiagramDesigner\Resources\Images\Group.png" />
-    <Resource Include="DiagramDesigner\Resources\Images\OpenFolder.png" />
-    <Resource Include="DiagramDesigner\Resources\Images\Paste.png" />
-    <Resource Include="DiagramDesigner\Resources\Images\PasteBig.png" />
-    <Resource Include="DiagramDesigner\Resources\Images\Print.png" />
-    <Resource Include="DiagramDesigner\Resources\Images\Save.png" />
-    <Resource Include="DiagramDesigner\Resources\Images\SendBackward.png" />
-    <Resource Include="DiagramDesigner\Resources\Images\SendToBack.png" />
-    <Resource Include="DiagramDesigner\Resources\Images\Ungroup.png" />
+    <Resource Include="Resources\Images\AlignObjectsBottom.png" />
+    <Resource Include="Resources\Images\AlignObjectsCenteredHorizontal.png" />
+    <Resource Include="Resources\Images\AlignObjectsCenteredVertical.png" />
+    <Resource Include="Resources\Images\AlignObjectsLeft.png" />
+    <Resource Include="Resources\Images\AlignObjectsRight.png" />
+    <Resource Include="Resources\Images\AlignObjectsTop.png" />
+    <Resource Include="Resources\Images\BringForward.png" />
+    <Resource Include="Resources\Images\BringToFront.png" />
+    <Resource Include="Resources\Images\Copy.png" />
+    <Resource Include="Resources\Images\Cut.png" />
+    <Resource Include="Resources\Images\Delete.png" />
+    <Resource Include="Resources\Images\DistributeObjectsHorizontal.png" />
+    <Resource Include="Resources\Images\DistributeObjectsVertical.png" />
+    <Resource Include="Resources\Images\GenericDocument.png" />
+    <Resource Include="Resources\Images\Group.png" />
+    <Resource Include="Resources\Images\OpenFolder.png" />
+    <Resource Include="Resources\Images\Paste.png" />
+    <Resource Include="Resources\Images\PasteBig.png" />
+    <Resource Include="Resources\Images\Print.png" />
+    <Resource Include="Resources\Images\Save.png" />
+    <Resource Include="Resources\Images\SendBackward.png" />
+    <Resource Include="Resources\Images\SendToBack.png" />
+    <Resource Include="Resources\Images\Ungroup.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

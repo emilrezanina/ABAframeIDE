@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ABAframeIDE.DiagramDesigner
+namespace DiagramDesigner
 {
     public interface IGroupable
     {
