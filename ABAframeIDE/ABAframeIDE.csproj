@@ -97,51 +97,51 @@
     <Compile Include="View\ToolboxContent.xaml.cs">
       <DependentUpon>ToolboxContent.xaml</DependentUpon>
     </Compile>
-    <Page Include="Resources\ApplicationToolbar.xaml">
+    <Page Include="View\ApplicationToolbar.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Resources\Connection.xaml">
+    <Page Include="View\Connection.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Resources\DesignerItem.xaml">
+    <Page Include="View\DesignerItem.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Resources\Stencils\SimulationModelStencils.xaml">
+    <Page Include="View\Stencils\SimulationModelStencils.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Resources\Stencils\CompositionStencils.xaml">
+    <Page Include="View\Stencils\CompositionStencils.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Resources\Styles\Expander.xaml">
+    <Page Include="View\Styles\Expander.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Resources\Styles\GroupBox.xaml">
+    <Page Include="View\Styles\GroupBox.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Resources\Styles\ScrollBar.xaml">
+    <Page Include="View\Styles\ScrollBar.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Resources\Styles\Shared.xaml">
+    <Page Include="View\Styles\Shared.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Resources\Styles\ToolBar.xaml">
+    <Page Include="View\Styles\ToolBar.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Resources\Toolbox.xaml">
+    <Page Include="View\Toolbox.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Resources\ToolboxItem.xaml">
+    <Page Include="View\ToolboxItem.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
